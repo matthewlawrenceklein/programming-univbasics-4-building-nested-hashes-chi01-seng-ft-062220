@@ -29,7 +29,7 @@ describe "We can create complex, nested Hashes by implementing four methods:" do
         expect(monopoly_with_second_tier[:railroads][:rent_in_dollars]).to eq({}), ":rent_in_dollars should point to an empty hash"
       end
 
-      xit "a key called :names set to an empty hash" do
+      it "a key called :names set to an empty hash" do
         expect(monopoly_with_second_tier[:railroads].has_key?(:names)).to(be_truthy, ":railroads should point to a Hash with key names")
       end
     end
